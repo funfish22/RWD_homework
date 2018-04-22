@@ -1,0 +1,125 @@
+.content img{
+	display: block;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content p{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+
+/*登入*/
+
+.login{
+	width: 30%;
+	margin: 0 auto;
+	border-top: 3px solid #FF5E45;
+	box-shadow: 0px 1px 5px gray;
+	height: 250px;
+}
+
+.login h3{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.login form{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.login label{
+	display: block;
+	margin-bottom: 3px;
+	margin-top: 15px;
+}
+
+.email{
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.email i{
+	line-height: 24px;
+	padding-left: 5px;
+}
+
+.email input{
+	border: none;
+	height: 24px;
+}
+
+.email input:focus{
+	background-color:yellow;
+}
+
+.password{
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.password i{
+	line-height: 24px;
+	padding-left: 5px;
+}
+
+.password input{
+	border: none;
+	height: 24px;
+}
+
+.password input:focus{
+	background-color:yellow;
+}
+
+.login a{
+	text-decoration: none;
+	color: #FF5E45;
+	font-size: 14px;
+
+}
+
+.login .submit{
+	margin-top: 30px;
+	width: 47%;
+	float: left;
+	border: none;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login .gray{
+	margin-right: 5%;
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+.login .orange{
+	background-color: #F56C23;
+}
+
+@media(max-width: 768px){
+	.login{
+		width: 40%;
+	}
+}
+
+@media(max-width: 568px){
+	.login{
+		width: 70%;
+	}
+}
+
+@media(max-width: 375px){
+	.login{
+		width: 80%;
+	}
+}

@@ -1,0 +1,320 @@
+.content{
+	margin-top: 50px;
+}
+
+/*品項清單*/
+
+.shoppingList{
+	float: left;
+	width: 200px;
+	padding-left: 20px;
+}
+
+.shoppingList span{
+	display: block;
+}
+
+.shoppingList i{
+	font-size: 30px;
+}
+
+.shoppingList h2{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.shoppingList li{
+	border-bottom: 1px solid black;
+}
+
+.shoppingList li:hover{
+	background-color: #3D1101;
+}
+
+/*選擇品項*/
+
+.add-food{
+	background-color: #3D1101;
+}
+
+.shoppingList .add-food a{
+	color: #fff;
+}
+
+.shoppingList a{
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+.shoppingList a:hover{
+	color: #fff;
+}
+
+.shooping-right{
+	margin-left: 250px;
+}
+
+/*搜尋*/
+
+.text-search{
+	float: left;
+	border: 2px solid #3D1101;
+	background-color: #3D1101;
+}
+
+
+.search input{
+	width: 400px;
+	height: 30px;
+	background-color: #efe9e7;
+	border: none;
+}
+
+.fa-search{
+	text-decoration: none;
+	padding-right: 5px;
+	color: #fff;
+}
+
+/*購物車*/
+
+.shoppingCart{
+	float: right;
+	margin-right: 20px;
+	position: relative;
+}
+
+.shoppingCart a{
+	text-decoration: none;
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid #3D1101;
+}
+
+.shoppingCart p{
+	position: absolute;
+    top: -5px;
+    right: 7px;
+    color: #fff;
+    background-color: #FF5E45;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.shoppingCart .fa-shopping-cart{
+	border-right: 0;
+	font-size: 30px;
+	color: #3D1101;
+}
+
+/*美食清單*/
+
+.foodList{
+	float: left;
+	width: 100%;
+	margin-top: 25px;	
+}
+
+.fa-heart-o{
+	color: #fff;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.fa-heart{
+	color: #fff;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.foodList li{
+	float: left;	
+	width: 30.33333%;
+	margin-right: 20px;
+	box-shadow: 0px 1px 5px gray;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+.foodList img{
+	height: 120px;
+	margin-bottom: 10px;
+}
+
+.foodList h3{
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.foodList p{
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 12px;
+	margin-bottom: 8px;
+	z-index: 10;
+}
+
+.foodList .hotBar{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 80px solid #00CC99;
+    border-left: 80px solid transparent;
+    z-index: 5;
+    opacity: 0.9;
+}
+
+.foodList .hot{
+	position: absolute ;
+	transform: rotate(45deg);
+	padding: 5px 10px;
+	top: 18px;
+	right: -15px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.foodList .money{
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+.foodList hr{
+	width: 50%;
+	border: 0.5px solid black;
+	margin-bottom: 20px;
+}
+
+.foodList a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #FF5E45;
+	border: 2px solid #FF5E45;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	line-height: 28px;
+}
+
+/*加入購物車*/
+
+.add-shop{
+	display: block;
+	width: 90%;
+	border: 2px solid #FF5E45;
+	border-radius: 5px;
+	padding-left: 10%;
+	margin-right: 10%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	color: #FF5E45;
+}
+
+.add-shop input{
+	border: none;
+	background-color: #EFE9E7;
+	color: #FF5E45;
+	line-height: 24px;
+	font-weight: bold;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 10%;
+	outline: none;
+}
+
+.add-shop input:hover{
+	cursor: pointer;
+	color: #3D1101;
+}
+
+@media(max-width: 768px){
+	.search input{
+		width: 200px;
+	}
+
+	.foodList li{
+		width: 44%;
+	}
+	.add-shop input{
+		margin-left: 0px;
+	}
+}
+
+@media(max-width: 568px){
+	.shoppingList li{
+		float: left;
+		width: 50%;
+	}
+
+	.text-search{
+		margin-left: 3%;
+	}
+
+	.search input{
+		width: 200px;
+	}
+
+	.shoppingList{
+		height: 100px;
+		width: 100%;
+		text-align: center;
+		float: none;
+		padding-left: 0;
+		margin: 0 auto;
+	}
+
+	.shooping-right{
+		margin-top: 50px;
+		margin-left: 0;
+	}
+
+	.foodList li{
+		width: 44%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.foodList img{
+		width: 100%;
+	}
+	.add-shop input{
+		margin-left: 0px;
+	}
+}
+
+@media(max-width: 375px){
+	.shoppingList{
+		margin-bottom: 120px;
+	}
+
+	.shoppingList li{
+		float: left;
+		width: 100%;
+	}
+
+	.search input{
+		width: 120px;
+	}
+
+	.foodList li{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.add-shop input{
+		margin-left: 10%;
+	}
+}
